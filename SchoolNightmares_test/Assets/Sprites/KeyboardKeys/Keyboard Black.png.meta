@@ -1,0 +1,1135 @@
+fileFormatVersion: 2
+guid: b471b008d40d08b44b8cefce929e8e5a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8467119325503631922
+    second: Keyboard Black_0
+  - first:
+      213: 3201225863430720484
+    second: Keyboard Black_1
+  - first:
+      213: -2924405715272991627
+    second: Keyboard Black_2
+  - first:
+      213: 5623595470008388587
+    second: Keyboard Black_key1
+  - first:
+      213: 532015041786614711
+    second: Keyboard Black_4
+  - first:
+      213: -2769686234135847455
+    second: Keyboard Black_5
+  - first:
+      213: 4258200057480944278
+    second: Keyboard Black_6
+  - first:
+      213: -637705176032098483
+    second: Keyboard Black_7
+  - first:
+      213: 857132718388523726
+    second: Keyboard Black_8
+  - first:
+      213: 7498317165019275574
+    second: Keyboard Black_9
+  - first:
+      213: -8350484229842743065
+    second: Keyboard Black_10
+  - first:
+      213: -8097102613513468948
+    second: Keyboard Black_11
+  - first:
+      213: 634604212112763295
+    second: Keyboard Black_12
+  - first:
+      213: 1600997530979935604
+    second: Keyboard Black_13
+  - first:
+      213: -8161261230905359899
+    second: Keyboard Black_14
+  - first:
+      213: 6211958184337049859
+    second: Keyboard Black_15
+  - first:
+      213: -6117551786412853424
+    second: Keyboard Black_16
+  - first:
+      213: -7618876900109785307
+    second: Keyboard Black_17
+  - first:
+      213: -4450558153152303826
+    second: Keyboard Black_18
+  - first:
+      213: -7352853702384248107
+    second: Keyboard Black_19
+  - first:
+      213: -2647028457278518182
+    second: Keyboard Black_20
+  - first:
+      213: -6134440003994661424
+    second: Keyboard Black_21
+  - first:
+      213: -2467958084255522674
+    second: Keyboard Black_22
+  - first:
+      213: 8292790114813847220
+    second: Keyboard Black_23
+  - first:
+      213: -2711799598413507583
+    second: Keyboard Black_24
+  - first:
+      213: -6796666872351407793
+    second: Keyboard Black_25
+  - first:
+      213: -7515773840535286451
+    second: Keyboard Black_26
+  - first:
+      213: -4477316183677871718
+    second: Keyboard Black_27
+  - first:
+      213: 1275613974194353413
+    second: Keyboard Black_28
+  - first:
+      213: 9035313944896003088
+    second: Keyboard Black_29
+  - first:
+      213: 2178278340041761005
+    second: Keyboard Black_30
+  - first:
+      213: -8424173504290619340
+    second: Keyboard Black_31
+  - first:
+      213: 6192982233312932132
+    second: Keyboard Black_32
+  - first:
+      213: -2622253590013598961
+    second: Keyboard Black_33
+  - first:
+      213: 5202187807129108372
+    second: Keyboard Black_key2
+  - first:
+      213: -1818159319666831959
+    second: Keyboard Black_key3
+  - first:
+      213: -50234856521557505
+    second: Keyboard Black_key4
+  - first:
+      213: -6247808024110126250
+    second: Keyboard Black_key5
+  - first:
+      213: 4292474903421333787
+    second: Keyboard Black_key6
+  - first:
+      213: 4562380725681521563
+    second: Keyboard Black_key7
+  - first:
+      213: 6796680498768938850
+    second: Keyboard Black_key8
+  - first:
+      213: -5194498553883193646
+    second: Keyboard Black_key9
+  - first:
+      213: -1277884418985845930
+    second: Keyboard Black_key0
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Keyboard Black_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 240
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa50a744c457394c808f6eb02afec75
+      internalID: -8467119325503631922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 241
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252c04ef7f97cc14f96e4d67133ddcc7
+      internalID: 3201225863430720484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 241
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634698e775f210442b3d9dd18bd627ad
+      internalID: -2924405715272991627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_key1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f716f71a4683eb41972be8e14e0fe4f
+      internalID: 5623595470008388587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 192
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cae23ef5f94ee45b2b6916a3ffec21
+      internalID: 532015041786614711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 186
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8473b4e5c91dd7c4faff8840f93d5551
+      internalID: -2769686234135847455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 176
+        width: 154
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9fbd5978382bcf46ba69fc8e85bd6d0
+      internalID: 4258200057480944278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 176
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62e52fcfe86f454da0e30b39553ade0
+      internalID: -637705176032098483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d730836a50843d4ea5fd7b37d04ebce
+      internalID: 857132718388523726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 96
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc0f8756d79c8743899ea1680e3e2d8
+      internalID: 7498317165019275574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_10
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a94ca356c57af459fc125a8370ff72
+      internalID: -8350484229842743065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_11
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 144
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0409d9b8c6fd88244a1d28afdec143d2
+      internalID: -8097102613513468948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 160
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2411dc987c4da479456598c2f6d79c
+      internalID: 634604212112763295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 192
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c9806ed7662c24da26b7b5e1a04b1d
+      internalID: 1600997530979935604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 186
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb251b0409b736943bb8fddbc499d91c
+      internalID: -8161261230905359899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 80
+        width: 154
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42292a0e1c214e04bb5e6b8431193444
+      internalID: 6211958184337049859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d67f7662daf24e41b3907c4ac4aeb74
+      internalID: -6117551786412853424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066745145db3f5947a1102db75d7645b
+      internalID: -7618876900109785307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 80
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4497149928f7a7489a7c0aa55c17cbf
+      internalID: -4450558153152303826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_19
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072e267c9aa9f134cae8fa4480fd4bb9
+      internalID: -7352853702384248107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_20
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bb573bb2a9d9747a33aa3f43e26432
+      internalID: -2647028457278518182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_21
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028ba09e0b68fc048a9d67d218ba4168
+      internalID: -6134440003994661424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_22
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdfca2d883b73244839e7a781bbbe01
+      internalID: -2467958084255522674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_23
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9653c53d83acf40ae53f3357d138d9
+      internalID: 8292790114813847220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_24
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc015edf33d07a645866801b4b6c32be
+      internalID: -2711799598413507583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42ed7ab9ff7d504b94eb7838a154f14
+      internalID: -6796666872351407793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_26
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7cd46f031fb734289168f44c51f323
+      internalID: -7515773840535286451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_27
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 0
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0228008440eff4d41b3f5335bdceac30
+      internalID: -4477316183677871718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_28
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d89a29cf52e31b448024184c0dabcfe
+      internalID: 1275613974194353413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_29
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdc6187e387dfd44932a7c5afdbea3e
+      internalID: 9035313944896003088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_30
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204db582faea6a64eb8b60e75b32bb1d
+      internalID: 2178278340041761005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_31
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa7a8ce7f56e6d418a429b3391b177d
+      internalID: -8424173504290619340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_32
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e000828a3d5d62444813d9e6e40ad34e
+      internalID: 6192982233312932132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_33
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d86b66c0c625c4785ad5b9ef2c2058
+      internalID: -2622253590013598961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_key2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e40bdf7e074e6b488b6c0db2f022627
+      internalID: 5202187807129108372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_key3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1f95c4d537eaf4b9e23d253817a952
+      internalID: -1818159319666831959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_key4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990a896e7c73c504e81c550444d68b0b
+      internalID: -50234856521557505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_key5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a513be28d64dc4e81474c84c2a5919
+      internalID: -6247808024110126250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_key6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46d03275e47e124a9744a275505f8ca
+      internalID: 4292474903421333787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_key7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60941f5b4394e64080d00b753e6cb50
+      internalID: 4562380725681521563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_key8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6ca5b3b402c7a41a814d73ceaf6bc9
+      internalID: 6796680498768938850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_key9
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c6c7f3326d8dc42958a2d966d0e856
+      internalID: -5194498553883193646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard Black_key0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc765020018e4ea4dade9589f3f008b3
+      internalID: -1277884418985845930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
