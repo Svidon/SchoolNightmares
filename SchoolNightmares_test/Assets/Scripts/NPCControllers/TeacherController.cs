@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class TeacherController : MonoBehaviour
@@ -8,6 +9,7 @@ public class TeacherController : MonoBehaviour
     private Vector2 direction;
     private Vector2 movement;
     private float speed;
+    private const float EPSILON = 0.2f;
     
     // Reference to teacher object and its rigidbody
     public GameObject teacher;
@@ -36,7 +38,8 @@ public class TeacherController : MonoBehaviour
 
     // To perform the movement at the end of the computations
     void FixedUpdate(){
-        if(following){
+        // Move if it has to follow and it is not already too close
+        if(following && (player.position - transform.position).magnitude > EPSILON){
             // Now move the character
             rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
         }
@@ -47,5 +50,17 @@ public class TeacherController : MonoBehaviour
         print("Started moving towards player");
 
         following = true;
+    }
+
+    // Called when the teacher reaches the player
+    void OnTriggerEnter2D(Collider2D other) {
+        
+        print("diocan");
+        // Check that the triggering object is the player
+        if (other.CompareTag("Player") && following) {
+            print("Got by teacher");
+            this.CancelInvoke("UpdatePath");
+            SceneManager.LoadScene("OtherSceneName", LoadSceneMode.Additive);
+        }
     }
 }

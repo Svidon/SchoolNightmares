@@ -5,9 +5,14 @@ using UnityEngine;
 public class SpellController : MonoBehaviour
 {
     // Arrays of spells
-    public Spell[] allSpells;
-    public Spell[] playerSpells;
+    [SerializeField] public Spell[] allSpells;
+    [SerializeField] public Spell[] playerSpells;
     public static Spell[] activeSpells;
+    public static Spell[] everySpell;
+
+    // Fire point of the character
+    public Transform firePoint;
+    public GameObject fireballPrefab;
 
 
     void Start(){
@@ -21,11 +26,8 @@ public class SpellController : MonoBehaviour
         playerSpells[1].description = allSpells[1].description;
         playerSpells[1].learned = true;
 
-        playerSpells[2].id = allSpells[2].id;
-        playerSpells[2].name = allSpells[2].name;
-        playerSpells[2].icon = allSpells[2].icon;
-        playerSpells[2].description = allSpells[2].description;
-        playerSpells[2].learned = true;
+        playerSpells[2].name = "Not learned";
+        playerSpells[2].description = "Not learned";
 
         playerSpells[3].name = "Not learned";
         playerSpells[3].description = "Not learned";
@@ -49,10 +51,13 @@ public class SpellController : MonoBehaviour
         playerSpells[0].description = "Not learned";
 
         activeSpells = playerSpells;
+        everySpell = allSpells;
     }
 
-
     void Update(){
+
+        // Update the player spells with the static array
+        playerSpells = activeSpells;
 
         // Check if a spell was casted
         if (Input.GetKeyDown("1")){
@@ -77,13 +82,25 @@ public class SpellController : MonoBehaviour
     }
 
 
+    // Inserts a new spell in the player's spellbook
+    public static void LearnSpell(int i){
+        activeSpells[i].id = everySpell[i].id;
+        activeSpells[i].name = everySpell[i].name;
+        activeSpells[i].icon = everySpell[i].icon;
+        activeSpells[i].description = everySpell[i].description;
+        activeSpells[i].learned = true;
+    }
+
+
     private void CastSpell(Spell s){
         switch(s.id){
             case 1:
                 print("Casted Spell" + s.name);
                 break;
             case 2:
-                print("Casted Spell 2");
+                // Call fireball code
+                print("Casted " + s.name);
+                Fireball();
                 break;
             case 3:
                 print("Casted Spell 3");
@@ -110,6 +127,13 @@ public class SpellController : MonoBehaviour
                 print("Spell casting ERROR!");
                 break;
         }
+    }
+
+    
+    /* FOLLOWING THIS THERE WILL BE ALL THE SPELL CODES, IN ID ORDER */
+    // Cast a fireball using prefabs
+    private void Fireball(){
+        Instantiate(fireballPrefab, firePoint.position, firePoint.rotation);
     }
 
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ScissorsController : MonoBehaviour
 {
-    public GameObject scissors;
 
     void OnTriggerEnter2D(Collider2D other) {
         
@@ -13,11 +12,11 @@ public class ScissorsController : MonoBehaviour
             print("Got Scissors");
 
             // Make the teacher run after the player
-            TeacherController.StartFollowing();
+            //TeacherController.StartFollowing();
+            AITeacher.StartFollowing();
 
             // Deactivate/Destroy this object
-            //scissors.SetActive(false);
-            Destroy(scissors);
+            Destroy(gameObject);
         }
     }
 }
