@@ -11,6 +11,8 @@ public class ScissorsController : MonoBehaviour
         if (other.CompareTag("Player")) {
             print("Got Scissors");
 
+            BoyMovement.hasScissors = true;
+
             // Make the teacher run after the player
             //TeacherController.StartFollowing();
             AITeacher.StartFollowing();
