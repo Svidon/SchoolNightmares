@@ -11,6 +11,9 @@ public class BoyAnimation : MonoBehaviour
 
     int lastDirection;
 
+    // Current direction
+    public static string currentDirection;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -39,6 +42,7 @@ public class BoyAnimation : MonoBehaviour
         }
 
         anim.Play(directionArray[lastDirection]);
+        currentDirection = directionArray[lastDirection];
     }
 
     // MARKERS Converts a Vector2 direction to a index to a slcie around a circle

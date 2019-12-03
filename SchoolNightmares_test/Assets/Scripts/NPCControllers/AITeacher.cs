@@ -30,6 +30,8 @@ public class AITeacher : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
 
+        following = false;
+
         // Setup path "continuous" refreshing
         InvokeRepeating("UpdatePath", 0f, 0.5f);
     }
@@ -106,7 +108,7 @@ public class AITeacher : MonoBehaviour
         if (other.CompareTag("Player") && following) {
             print("Got by teacher");
             this.CancelInvoke("UpdatePath");
-            SceneManager.LoadScene("Level1", LoadSceneMode.Additive);
+            SceneManager.LoadScene("Level1", LoadSceneMode.Single);
         }
     }
     

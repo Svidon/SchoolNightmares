@@ -2,41 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoyMovement : MonoBehaviour
+public class BoyScissorsController : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private float moveH, moveV;
-    [SerializeField] private float moveSpeed = 1.0f;
+    // Control to check if player has the item
+    public bool hasScissors = false;
 
-
-
-    // Here just for the moment
-    public static bool hasScissors = false;
+    // Set a time delay for consecutive attacks
     private float timeBtwAttack;
     public float startTimeBtwAttack;
+
+    // Position and range of the attack
     public Transform attackPosition;
     public float attackRange;
+
+    // Layer mask to identify objectives
     public LayerMask whatIsWeed;
 
 
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    private void FixedUpdate()
-    {
-        moveH = Input.GetAxis("Horizontal") * moveSpeed;
-        moveV = Input.GetAxis("Vertical") * moveSpeed;
-        rb.velocity = new Vector2(moveH, moveV);
-
-        Vector2 direction = new Vector2(moveH, moveV);
-        FindObjectOfType<BoyAnimation>().SetDirection(direction);
-
-    }
-
-
-    // For the moment it'll just be here
     private void Update(){
 
         if (timeBtwAttack <= 0){
@@ -56,6 +38,7 @@ public class BoyMovement : MonoBehaviour
         }
     }
 
+    // Draws useful gizmos around attacking area
     void OnDrawGizmosSelected(){
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPosition.position, attackRange);

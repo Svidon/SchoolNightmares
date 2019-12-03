@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class ScissorsController : MonoBehaviour
 {
+    // References to teacher
+    public GameObject teacherObject;
+    private TeacherController teacherScript;
+
+    void Start(){
+        teacherScript = teacherObject.GetComponent<TeacherController>();
+    }
 
     void OnTriggerEnter2D(Collider2D other) {
         
@@ -11,11 +18,10 @@ public class ScissorsController : MonoBehaviour
         if (other.CompareTag("Player")) {
             print("Got Scissors");
 
-            BoyMovement.hasScissors = true;
+            other.gameObject.GetComponent<BoyScissorsController>().hasScissors = true;
 
             // Make the teacher run after the player
-            //TeacherController.StartFollowing();
-            AITeacher.StartFollowing();
+            teacherScript.StartFollowing();
 
             // Deactivate/Destroy this object
             Destroy(gameObject);

@@ -10,6 +10,9 @@ public class SpellController : MonoBehaviour
     public static Spell[] activeSpells;
     public static Spell[] everySpell;
 
+    // Reference to the player
+    //public GameObject player;
+
     // Fire point of the character
     public Transform firePoint;
     public GameObject fireballPrefab;
@@ -60,23 +63,23 @@ public class SpellController : MonoBehaviour
         playerSpells = activeSpells;
 
         // Check if a spell was casted
-        if (Input.GetKeyDown("1")){
+        if (Input.GetKeyDown("1") && playerSpells[1].learned == true){
             CastSpell(playerSpells[1]);
-        } else if (Input.GetKeyDown("2")){
+        } else if (Input.GetKeyDown("2") && playerSpells[2].learned == true){
             CastSpell(playerSpells[2]);
-        } else if (Input.GetKeyDown("3")){
+        } else if (Input.GetKeyDown("3") && playerSpells[3].learned == true){
             CastSpell(playerSpells[3]);
-        } else if (Input.GetKeyDown("4")){
+        } else if (Input.GetKeyDown("4") && playerSpells[4].learned == true){
             CastSpell(playerSpells[4]);
-        } else if (Input.GetKeyDown("5")){
+        } else if (Input.GetKeyDown("5") && playerSpells[5].learned == true){
             CastSpell(playerSpells[5]);
-        } else if (Input.GetKeyDown("6")){
+        } else if (Input.GetKeyDown("6") && playerSpells[6].learned == true){
             CastSpell(playerSpells[6]);
-        } else if (Input.GetKeyDown("7")){
+        } else if (Input.GetKeyDown("7") && playerSpells[7].learned == true){
             CastSpell(playerSpells[7]);
-        } else if (Input.GetKeyDown("8")){
+        } else if (Input.GetKeyDown("8") && playerSpells[8].learned == true){
             CastSpell(playerSpells[8]);
-        } else if (Input.GetKeyDown("9")){
+        } else if (Input.GetKeyDown("9") && playerSpells[0].learned == true){
             CastSpell(playerSpells[0]);
         }
     }
