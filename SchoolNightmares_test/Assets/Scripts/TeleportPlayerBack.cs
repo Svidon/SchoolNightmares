@@ -12,7 +12,7 @@ public class TeleportPlayerBack : MonoBehaviour
         {
             //p = GameObject.Find("Player");
             //p.transform.position = new Vector2(19.5f, 8.03f); //correct witch
-            other.gameObject.transform.position = new Vector2(14f, -5f);
+            other.gameObject.transform.position = new Vector2(15.5f, -7f);
         }
 
     }
