@@ -8,6 +8,10 @@ public class ScissorsController : MonoBehaviour
     public GameObject teacherObject;
     private TeacherController teacherScript;
 
+    // UI elements
+    public GameObject scissorsTooltip;
+    public GameObject itemUI;
+
     void Start(){
         teacherScript = teacherObject.GetComponent<TeacherController>();
     }
@@ -19,6 +23,12 @@ public class ScissorsController : MonoBehaviour
             print("Got Scissors");
 
             other.gameObject.GetComponent<BoyScissorsController>().hasScissors = true;
+
+            // Show the tooltip
+            scissorsTooltip.SetActive(true);
+
+            // Insert the scissor in the item box
+            itemUI.SetActive(true);
 
             // Make the teacher run after the player
             teacherScript.StartFollowing();

@@ -8,6 +8,7 @@ public class BookButtonController : MonoBehaviour
 
     public GameObject spellbook;
     public Button myButton;
+    public GameObject scrollTooltip;
 
 	void Start () {
 		Button btn = myButton.GetComponent<Button>();
@@ -24,5 +25,8 @@ public class BookButtonController : MonoBehaviour
             spellbook.SetActive(true);
             UIManager.SetSpellBookVisible(true);
         }
+
+        // Hide the tooltip
+        scrollTooltip.SetActive(false);
 	}
 }

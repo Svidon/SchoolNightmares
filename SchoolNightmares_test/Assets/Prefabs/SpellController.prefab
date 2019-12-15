@@ -49,16 +49,16 @@ MonoBehaviour:
     icon: {fileID: 0}
     id: 9
     learned: 0
-  - name: Chaos Bolt
-    description: Deals 20 chaos damage
-    icon: {fileID: 21300000, guid: 95c28dbd2ca570f4d881262322ae2da9, type: 3}
+  - name: Fireball
+    description: The fireball melds ice
+    icon: {fileID: 21300000, guid: 42c609d59e68cff4e81ed6a34998c912, type: 3}
     id: 1
     learned: 1
-  - name: Fireball
-    description: The fireballs melds ice
-    icon: {fileID: 21300000, guid: 42c609d59e68cff4e81ed6a34998c912, type: 3}
+  - name: 
+    description: 
+    icon: {fileID: 0}
     id: 2
-    learned: 1
+    learned: 0
   - name: 
     description: 
     icon: {fileID: 0}

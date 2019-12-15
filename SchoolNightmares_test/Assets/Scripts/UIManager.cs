@@ -5,6 +5,7 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public GameObject spellbook;
+    public GameObject scrollTooltip;
 
     // Variable to check if the spellbook has to be seen
     private static bool spellBookVisible = false;
@@ -23,6 +24,7 @@ public class UIManager : MonoBehaviour
         if (Input.GetKeyDown("p") && GetSpellBookVisible() == false){
             spellbook.SetActive(true);
             SetSpellBookVisible(true);
+            scrollTooltip.SetActive(false);
         } else if ((Input.GetKeyDown("escape") || Input.GetKeyDown("p")) && GetSpellBookVisible() == true){
             spellbook.SetActive(false);
             SetSpellBookVisible(false);

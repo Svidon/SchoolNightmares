@@ -23,11 +23,8 @@ public class SpellController : MonoBehaviour
         // Add a spell to the player
         // In position 0 there will be spell 9
 
-        playerSpells[1].id = allSpells[1].id;
-        playerSpells[1].name = allSpells[1].name;
-        playerSpells[1].icon = allSpells[1].icon;
-        playerSpells[1].description = allSpells[1].description;
-        playerSpells[1].learned = true;
+        playerSpells[1].name = "Not learned";
+        playerSpells[1].description = "Not learned";
 
         playerSpells[2].name = "Not learned";
         playerSpells[2].description = "Not learned";
@@ -98,12 +95,12 @@ public class SpellController : MonoBehaviour
     private void CastSpell(Spell s){
         switch(s.id){
             case 1:
-                print("Casted Spell" + s.name);
-                break;
-            case 2:
                 // Call fireball code
                 print("Casted " + s.name);
                 Fireball();
+                break;
+            case 2:
+                print("Casted Spell 3");
                 break;
             case 3:
                 print("Casted Spell 3");
