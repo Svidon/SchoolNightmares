@@ -19,6 +19,7 @@ public class FireballScriptController : MonoBehaviour
 
             // Deactivate/Destroy this object
             Destroy(gameObject);
+            Destroy(GameObject.Find("Arrow_spellscroll"));
         }
     }
 }

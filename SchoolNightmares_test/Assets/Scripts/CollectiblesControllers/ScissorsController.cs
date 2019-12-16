@@ -38,6 +38,7 @@ public class ScissorsController : MonoBehaviour
 
             // Deactivate/Destroy this object
             Destroy(gameObject);
+            Destroy(GameObject.Find("Arrow_scissor"));
         }
     }
 }
