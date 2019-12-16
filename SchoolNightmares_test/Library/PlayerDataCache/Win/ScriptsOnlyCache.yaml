@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - BoyController
     - BoyScissorsController
     - CameraController
+    - ExitButton
     - FireballBulletControl
     - FireballScriptController
     - FreeFriend
@@ -17,7 +18,11 @@ ScriptsOnlyBuild:
     - IceBlockController
     - LevelPortalController
     - MainMenu
+    - MainMenuButtonController
+    - MenuButtonController
     - PlayerMovement
+    - RestartButtonController
+    - ResumeButtonController
     - ScissorsController
     - SpellController
     - StartAudioScript
@@ -28,6 +33,7 @@ ScriptsOnlyBuild:
     - UIManager
     - WitchAnimation
     - WitchMovement
+    - WorldControl
     AstarPathfindingProject.dll:
     - AstarPath
     - Pathfinding.AIDestinationSetter
@@ -74,6 +80,8 @@ ScriptsOnlyBuild:
     - Class: 50
       Script: {instanceID: 0}
     - Class: 58
+      Script: {instanceID: 0}
+    - Class: 60
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
@@ -164,11 +172,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11704}
     - Class: 114
+      Script: {instanceID: 11862}
+    - Class: 114
       Script: {instanceID: 11870}
     - Class: 114
       Script: {instanceID: 11880}
     - Class: 114
       Script: {instanceID: 11934}
+    - Class: 114
+      Script: {instanceID: 25010}
+    - Class: 114
+      Script: {instanceID: 25016}
+    - Class: 114
+      Script: {instanceID: 25022}
+    - Class: 114
+      Script: {instanceID: 25028}
+    - Class: 114
+      Script: {instanceID: 40600}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -359,7 +379,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11880}
     - Class: 114
-      Script: {instanceID: 17444}
+      Script: {instanceID: 29924}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -703,7 +723,7 @@ ScriptsOnlyBuild:
     className: AstarPath
   - hash:
       serializedVersion: 2
-      Hash: 4c00c3d74386eaed1e17679b35e33a35
+      Hash: 5e0895182e0f97548a25c8cc13829cbb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BookController
@@ -985,7 +1005,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 612996463584629aeccbb38680c3eec8
+      Hash: 8e7adb0d1260dc2f086816cd07d40c8f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpellController
@@ -1135,12 +1155,6 @@ ScriptsOnlyBuild:
     className: LegacyAIPath
   - hash:
       serializedVersion: 2
-      Hash: 6373de639d08d9117137d8122d7a8890
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: WorldControl2
-  - hash:
-      serializedVersion: 2
       Hash: e80c1450883443c68d6c2dade213536f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1153,7 +1167,7 @@ ScriptsOnlyBuild:
     className: AnimationLink
   - hash:
       serializedVersion: 2
-      Hash: 2626f41d80941829b04321e21db07fe4
+      Hash: a7794c4b375067e017f70853cf274916
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIManager
@@ -1243,7 +1257,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 6373de639d08d9117137d8122d7a8890
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WorldControl
@@ -1295,6 +1309,42 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 930b2a7c015542327cee6af349728cdd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ResumeButtonController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RestartButtonController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuButtonController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExitButton
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseButtonController
+  - hash:
+      serializedVersion: 2
+      Hash: 930b2a7c015542327cee6af349728cdd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuButtonController
   platform: 5
   scenePathNames:
   - Assets/Scenes/Startscreen.unity

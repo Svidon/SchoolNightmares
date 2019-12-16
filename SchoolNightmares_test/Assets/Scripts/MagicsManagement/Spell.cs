@@ -10,13 +10,16 @@ public class Spell {
     public string description;
     public Sprite icon;
     public int id;
+    public int cooldown;
     public bool learned;
+    
 
     public Spell(Spell s){
         name = s.name;
         description = s.description;
         icon = s.icon;
         id = s.id;
+        cooldown = s.cooldown;
         learned = false;
     }
 

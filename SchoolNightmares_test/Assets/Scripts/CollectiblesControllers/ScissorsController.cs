@@ -30,6 +30,9 @@ public class ScissorsController : MonoBehaviour
             // Insert the scissor in the item box
             itemUI.SetActive(true);
 
+            // Freeze the game so the player can read the box
+            WorldControl.FreezeGame();
+
             // Make the teacher run after the player
             teacherScript.StartFollowing();
 

@@ -5,23 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class WorldControl : MonoBehaviour
 {
-    public int index;
-    public string levelName;
+    void Start(){
+        Time.timeScale = 1f;
+    }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            //Loading level with build index
-            SceneManager.LoadScene(index);
 
-            //SceneManager.SetActiveScene(GameObj);
+    // FUnctions to freeze and unfreeze the world
+    public static void FreezeGame(){
+        Time.timeScale = 0f;
+    }
 
-            //Loading level with scene name
-            //SceneManager.LoadScene("levelName");
+    public static void UnFreezeGame(){
+        Time.timeScale = 1f;
+    }
 
-            //Restart lvl
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+    // For buttons usage
+    public void ButtonUnFreezeGame(){
+        Time.timeScale = 1f;
     }
 }
