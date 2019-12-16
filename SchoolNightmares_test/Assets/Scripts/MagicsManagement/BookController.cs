@@ -6,17 +6,19 @@ using TMPro;
 
 public class BookController : MonoBehaviour
 {
-    public Spell[] spells;
+    private Spell[] spells;
+    public GameObject spellController;
 
     // OnEnable is called once when the object is enabled
     void OnEnable() {
-        // Do the same as it was just started
-        spells = SpellController.activeSpells;
+        // Get the player spells
+        spells = spellController.GetComponent<SpellController>().playerSpells;
+        //spells = SpellController.activeSpells;
 
-        for (int i=1; i<9; i++){
+        for (int i=1; i<5; i++){
             if(spells[i].learned == true){
                 // Access right child of spellbook and its properties to set
-                 GameObject spellObject = gameObject.transform.GetChild(i-1).gameObject;
+                 GameObject spellObject = gameObject.transform.GetChild(i).gameObject;
                  GameObject spellDescription = spellObject.transform.GetChild(0).gameObject;
                  GameObject spellName = spellObject.transform.GetChild(1).gameObject;
 
@@ -26,7 +28,7 @@ public class BookController : MonoBehaviour
                  spellName.GetComponent<TextMeshProUGUI>().text = spells[i].name.ToString();
             } else{
                 // Access right child of spellbook and its properties to set
-                 GameObject spellObject = gameObject.transform.GetChild(i-1).gameObject;
+                 GameObject spellObject = gameObject.transform.GetChild(i).gameObject;
                  GameObject spellDescription = spellObject.transform.GetChild(0).gameObject;
                  GameObject spellName = spellObject.transform.GetChild(1).gameObject;
 
@@ -37,10 +39,10 @@ public class BookController : MonoBehaviour
 
         }
 
-        // Child 9 (i=8) is handled in a different way (has to go in the last child)
+        // Child 5 is handled in a different way (has to go in the last child)
         if(spells[0].learned == true){
             // Access right child of spellbook and its properties to set
-                GameObject spellObject = gameObject.transform.GetChild(8).gameObject;
+                GameObject spellObject = gameObject.transform.GetChild(5).gameObject;
                 GameObject spellDescription = spellObject.transform.GetChild(0).gameObject;
                 GameObject spellName = spellObject.transform.GetChild(1).gameObject;
 
@@ -50,7 +52,7 @@ public class BookController : MonoBehaviour
                 spellName.GetComponent<TextMeshProUGUI>().text = spells[0].name.ToString();
         } else{
             // Access right child of spellbook and its properties to set
-                GameObject spellObject = gameObject.transform.GetChild(8).gameObject;
+                GameObject spellObject = gameObject.transform.GetChild(5).gameObject;
                 GameObject spellDescription = spellObject.transform.GetChild(0).gameObject;
                 GameObject spellName = spellObject.transform.GetChild(1).gameObject;
 

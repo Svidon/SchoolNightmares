@@ -5,10 +5,10 @@ using UnityEngine;
 public class SpellController : MonoBehaviour
 {
     // Arrays of spells
-    [SerializeField] public Spell[] allSpells;
-    [SerializeField] public Spell[] playerSpells;
-    public static Spell[] activeSpells;
-    public static Spell[] everySpell;
+    public Spell[] allSpells; // Contains all the spells definitions from inspector
+    public Spell[] playerSpells; // Contains the actual player spells
+    public static Spell[] activeSpells; // Support array to learn spells
+    public static Spell[] everySpell; // Support array to assign new learned spells
 
     // Reference to the player
     //public GameObject player;
@@ -21,34 +21,27 @@ public class SpellController : MonoBehaviour
     void Start(){
 
         // Add a spell to the player
-        // In position 0 there will be spell 9
+        // In position 0 there will be spell 5
 
         playerSpells[1].name = "Not learned";
         playerSpells[1].description = "Not learned";
+        playerSpells[1].id = allSpells[1].id;
 
         playerSpells[2].name = "Not learned";
         playerSpells[2].description = "Not learned";
+        playerSpells[2].id = allSpells[2].id;
 
         playerSpells[3].name = "Not learned";
         playerSpells[3].description = "Not learned";
+        playerSpells[3].id = allSpells[3].id;
 
         playerSpells[4].name = "Not learned";
         playerSpells[4].description = "Not learned";
-
-        playerSpells[5].name = "Not learned";
-        playerSpells[5].description = "Not learned";
-
-        playerSpells[6].name = "Not learned";
-        playerSpells[6].description = "Not learned";
-
-        playerSpells[7].name = "Not learned";
-        playerSpells[7].description = "Not learned";
-
-        playerSpells[8].name = "Not learned";
-        playerSpells[8].description = "Not learned";
+        playerSpells[4].id = allSpells[4].id;
 
         playerSpells[0].name = "Not learned";
         playerSpells[0].description = "Not learned";
+        playerSpells[0].id = allSpells[0].id;
 
         activeSpells = playerSpells;
         everySpell = allSpells;
@@ -69,14 +62,6 @@ public class SpellController : MonoBehaviour
         } else if (Input.GetKeyDown("4") && playerSpells[4].learned == true){
             CastSpell(playerSpells[4]);
         } else if (Input.GetKeyDown("5") && playerSpells[5].learned == true){
-            CastSpell(playerSpells[5]);
-        } else if (Input.GetKeyDown("6") && playerSpells[6].learned == true){
-            CastSpell(playerSpells[6]);
-        } else if (Input.GetKeyDown("7") && playerSpells[7].learned == true){
-            CastSpell(playerSpells[7]);
-        } else if (Input.GetKeyDown("8") && playerSpells[8].learned == true){
-            CastSpell(playerSpells[8]);
-        } else if (Input.GetKeyDown("9") && playerSpells[0].learned == true){
             CastSpell(playerSpells[0]);
         }
     }
@@ -110,18 +95,6 @@ public class SpellController : MonoBehaviour
                 break;
             case 5:
                 print("Casted Spell 5");
-                break;
-            case 6:
-                print("Casted Spell 6");
-                break;
-            case 7:
-                print("Casted Spell 7");
-                break;
-            case 8:
-                print("Casted Spell 8");
-                break;
-            case 9:
-                print("Casted Spell 9");
                 break;
             default:
                 print("Spell casting ERROR!");
