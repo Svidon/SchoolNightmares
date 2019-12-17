@@ -25,7 +25,7 @@ public class IceBlockController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
 
-            // Show tooltip
+            // Hide tooltip
             iceBlockTooltip.SetActive(false);
         }
     }

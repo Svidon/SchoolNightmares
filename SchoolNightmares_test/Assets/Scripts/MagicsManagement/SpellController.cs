@@ -15,33 +15,34 @@ public class SpellController : MonoBehaviour
 
     // Fire point of the character
     public Transform firePoint;
+
+    // Prefabs for the spells
     public GameObject fireballPrefab;
+    public GameObject greedyIllusionPrefab;
 
 
     void Start(){
 
         // Add a spell to the player
         // In position 0 there will be spell 5
-        playerSpells[1].name = "Not learned";
-        playerSpells[1].description = "Not learned";
-        playerSpells[1].id = allSpells[1].id;
-        playerSpells[1].cooldown = 100;
+        // This sets learned spells in previous levels
+        for (int i=1; i<5; i++){
+            if(allSpells[i].learned){
+                playerSpells[i].id = allSpells[i].id;
+                playerSpells[i].name = allSpells[i].name;
+                playerSpells[i].icon = allSpells[i].icon;
+                playerSpells[i].description = allSpells[i].description;
+                playerSpells[i].cooldown = allSpells[i].cooldown;
+                playerSpells[i].learned = true;
+            } else {
+                playerSpells[i].name = "Not learned";
+                playerSpells[i].description = "Not learned";
+                playerSpells[i].id = allSpells[1].id;
+                playerSpells[i].cooldown = 100;
+            }
+        }
 
-        playerSpells[2].name = "Not learned";
-        playerSpells[2].description = "Not learned";
-        playerSpells[2].id = allSpells[2].id;
-        playerSpells[2].cooldown = 100;
-
-        playerSpells[3].name = "Not learned";
-        playerSpells[3].description = "Not learned";
-        playerSpells[3].id = allSpells[3].id;
-        playerSpells[3].cooldown = 100;
-
-        playerSpells[4].name = "Not learned";
-        playerSpells[4].description = "Not learned";
-        playerSpells[4].id = allSpells[4].id;
-        playerSpells[4].cooldown = 100;
-
+        // Leave it out from the cycle since it's just gonna be learned in the last level
         playerSpells[0].name = "Not learned";
         playerSpells[0].description = "Not learned";
         playerSpells[0].id = allSpells[0].id;
@@ -107,7 +108,7 @@ public class SpellController : MonoBehaviour
                 Fireball();
                 break;
             case 2:
-                print("Casted Spell 3");
+                GreedyIllusion();
                 break;
             case 3:
                 print("Casted Spell 3");
@@ -129,6 +130,10 @@ public class SpellController : MonoBehaviour
     // Cast a fireball using prefabs
     private void Fireball(){
         Instantiate(fireballPrefab, firePoint.position, firePoint.rotation);
+    }
+
+    private void GreedyIllusion(){
+        Instantiate(greedyIllusionPrefab, firePoint.position, firePoint.rotation);
     }
 
 }

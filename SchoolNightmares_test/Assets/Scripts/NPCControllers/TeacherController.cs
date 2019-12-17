@@ -7,9 +7,15 @@ using Pathfinding;
 public class TeacherController : MonoBehaviour
 {
     private bool following;
+    public GameObject dialogueBefore;
+    public GameObject dialogueAfter;
+
+    // Control variable checking if the level has to be reloaded
+    private bool caught;
     
     void Start(){
         following = false;
+        caught = false;
     }
 
     // Make the teacher follow the player
@@ -29,8 +35,24 @@ public class TeacherController : MonoBehaviour
         // Check that the triggering object is the player
         if (other.CompareTag("Player") && following) {
             print("Got by teacher");
-            this.CancelInvoke("UpdatePath");
-            SceneManager.LoadScene("Level1", LoadSceneMode.Single);
+            this.CancelInvoke("UpdatePath"); // To make sure Astar stops computing paths
+
+            // Show dialogue and freeze game
+            dialogueAfter.SetActive(true);
+            WorldControl.FreezeGame();
+
+            // Set caught to true so the next scene can be loaded
+            caught = true;
+        } else if (other.CompareTag("Player")){
+            // Dialogue interaction
+            dialogueBefore.SetActive(true);
+        }
+    }
+
+    void Update(){
+        // Check if player was caught then restart scene
+        if(caught){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
         }
     }
 }

@@ -10,7 +10,7 @@ public class WorldControl : MonoBehaviour
     }
 
 
-    // FUnctions to freeze and unfreeze the world
+    // Functions to freeze and unfreeze the world
     public static void FreezeGame(){
         Time.timeScale = 0f;
     }

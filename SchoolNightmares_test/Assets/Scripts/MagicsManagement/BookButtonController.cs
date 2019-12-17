@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BookButtonController : MonoBehaviour
 {
@@ -26,7 +27,9 @@ public class BookButtonController : MonoBehaviour
             UIManager.SetSpellBookVisible(true);
         }
 
-        // Hide the tooltip
-        scrollTooltip.SetActive(false);
+        // Hide the tooltip if in level 1
+        if (SceneManager.GetActiveScene().name == "Level1"){
+            scrollTooltip.SetActive(false);
+        }
 	}
 }

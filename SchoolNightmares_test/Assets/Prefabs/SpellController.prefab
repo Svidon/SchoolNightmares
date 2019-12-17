@@ -56,11 +56,12 @@ MonoBehaviour:
     id: 1
     cooldown: 5
     learned: 0
-  - name: 
-    description: 
-    icon: {fileID: 0}
+  - name: GreedyIllusion
+    description: 'Illusion that stuns greedy enemies for 3s. Lasts: 6s. Cooldown:
+      10s'
+    icon: {fileID: 21300000, guid: 1525f82102901584dbbb935603a26611, type: 3}
     id: 2
-    cooldown: 0
+    cooldown: 10
     learned: 0
   - name: 
     description: 
@@ -108,3 +109,4 @@ MonoBehaviour:
   firePoint: {fileID: 0}
   fireballPrefab: {fileID: 3160240227358235117, guid: 6f9c9b1042ff4fb439663facd9cab95c,
     type: 3}
+  greedyIllusionPrefab: {fileID: 0}

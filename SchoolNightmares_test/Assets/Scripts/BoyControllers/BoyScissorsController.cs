@@ -18,6 +18,9 @@ public class BoyScissorsController : MonoBehaviour
     // Layer mask to identify objectives
     public LayerMask whatIsWeed;
 
+    void Start(){
+        hasScissors = false;
+    }
 
     private void Update(){
 

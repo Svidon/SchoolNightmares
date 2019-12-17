@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FreeFriend : MonoBehaviour
 {
@@ -17,8 +18,15 @@ public class FreeFriend : MonoBehaviour
             // Show dialogue
             dialogue.SetActive(true);
 
-            // Deactivate/Destroy this object
-            Destroy(GameObject.Find("TemperaryStone"));
+            // The stone is present just in level 1
+            if (SceneManager.GetActiveScene().name == "Level1"){
+                // Destroy this object
+                Destroy(GameObject.Find("TemperaryStone"));
+            } else if (SceneManager.GetActiveScene().name == "Level2"){
+                // Set the portal control variable to true!
+                Level2PortalController.freedFriend = true;
+            }
+            
         }
     }
 }

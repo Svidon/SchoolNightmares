@@ -74,7 +74,7 @@ public class FireballBulletControl : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
 
         // Just if it hits the ice destroy the other object
-        if(other.name == "ice_block"){
+        if(other.CompareTag("IceElement")){
             print("Hit ice block");
             Destroy(other.gameObject);
         } else if(other.CompareTag("Player")){

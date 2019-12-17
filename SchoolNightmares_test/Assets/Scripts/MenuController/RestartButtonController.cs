@@ -8,6 +8,6 @@ public class RestartButtonController : MonoBehaviour
 	public void RestartLevel(){
 
         // Restart the level
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
 	}
 }

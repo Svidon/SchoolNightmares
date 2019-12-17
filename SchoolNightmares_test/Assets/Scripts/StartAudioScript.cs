@@ -9,7 +9,14 @@ public class StartAudioScript : MonoBehaviour
 
     private void Start()
     {
+        // Setup path "continuous" refreshing
+        InvokeRepeating("PlayMusicClip", 0f, 238f);
+        
+    }
+
+    void PlayMusicClip(){
         MusicSource.clip = MusicClip;
+        MusicSource.volume = 1f;
         MusicSource.Play();
     }
 

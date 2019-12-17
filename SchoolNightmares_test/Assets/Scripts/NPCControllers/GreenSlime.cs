@@ -26,7 +26,7 @@ public class GreenSlime : MonoBehaviour
         // Make the slime move towards the element
         transform.position = Vector2.MoveTowards(transform.position, spots[randomSpot].position, speed * Time.deltaTime);
 
-        // 
+        // Check if the direction has to be changed
         if(changeTime <= 0){            
             randomSpot = Random.Range(0, spots.Length);
             changeTime = startChangeTime;
@@ -45,7 +45,7 @@ public class GreenSlime : MonoBehaviour
             print("Player caught!");
 
             // Restart level
-            SceneManager.LoadScene("Level1", LoadSceneMode.Single);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
         }
     }
 
