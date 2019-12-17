@@ -14,10 +14,19 @@ public class GreenSlime : MonoBehaviour
     public Transform[] spots;
     private int randomSpot;
 
+    // Controls variables for when it's hit by the frostbolt
+    private bool frozen = false;
+
+    // Checks whether the player was caught
+    private bool caught = false;
+    public GameObject caughtDialogue;
+
 
     void Start() {
         changeTime = startChangeTime;
         randomSpot = Random.Range(0, spots.Length);
+        frozen = false;
+        caught = false;
     }
 
 
@@ -34,6 +43,12 @@ public class GreenSlime : MonoBehaviour
             changeTime -= Time.deltaTime;
         }
 
+        // If caught restart the level
+        if(caught && !caughtDialogue.gameObject.activeSelf){
+            // Restart level
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+        }
+
     }
 
 
@@ -44,8 +59,10 @@ public class GreenSlime : MonoBehaviour
         {
             print("Player caught!");
 
-            // Restart level
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+            caughtDialogue.SetActive(true);
+            WorldControl.FreezeGame();
+
+            caught = true;
         }
     }
 
@@ -56,5 +73,19 @@ public class GreenSlime : MonoBehaviour
             randomSpot = Random.Range(0, spots.Length);
             changeTime = startChangeTime;
         }
+    }
+
+    // Function to freeze the slime and make it vulnerable to the fireball
+    public void FreezeMonster(){
+        // Set frozen true and slow it down
+        frozen = true;
+        startChangeTime = 3f;
+        speed = 2f;
+
+        // Visual change to the rendering
+        gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+
+        // Change gameObject tag so it's vulnerable to the fireball
+        gameObject.tag = "IceElement";
     }
 }

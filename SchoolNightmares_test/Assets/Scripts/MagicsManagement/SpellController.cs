@@ -19,6 +19,7 @@ public class SpellController : MonoBehaviour
     // Prefabs for the spells
     public GameObject fireballPrefab;
     public GameObject greedyIllusionPrefab;
+    public GameObject frostboltPrefab;
 
 
     void Start(){
@@ -26,7 +27,7 @@ public class SpellController : MonoBehaviour
         // Add a spell to the player
         // In position 0 there will be spell 5
         // This sets learned spells in previous levels
-        for (int i=1; i<5; i++){
+        for (int i=1; i<4; i++){
             if(allSpells[i].learned){
                 playerSpells[i].id = allSpells[i].id;
                 playerSpells[i].name = allSpells[i].name;
@@ -42,7 +43,7 @@ public class SpellController : MonoBehaviour
             }
         }
 
-        // Leave it out from the cycle since it's just gonna be learned in the last level
+        // This slot will never be used
         playerSpells[0].name = "Not learned";
         playerSpells[0].description = "Not learned";
         playerSpells[0].id = allSpells[0].id;
@@ -75,12 +76,6 @@ public class SpellController : MonoBehaviour
         } else if (Input.GetKeyDown("3") && (playerSpells[3].learned == true) && (fixedCooldowns[3] <= 0)){
             fixedCooldowns[3] = playerSpells[3].cooldown;
             CastSpell(playerSpells[3]);
-        } else if (Input.GetKeyDown("4") && (playerSpells[4].learned == true) && (fixedCooldowns[4] <= 0)){
-            fixedCooldowns[4] = playerSpells[4].cooldown;
-            CastSpell(playerSpells[4]);
-        } else if (Input.GetKeyDown("5") && (playerSpells[0].learned == true) && (fixedCooldowns[0] <= 0)){
-            fixedCooldowns[0] = playerSpells[0].cooldown;
-            CastSpell(playerSpells[0]);
         }
 
         // Update the cooldowns
@@ -111,13 +106,7 @@ public class SpellController : MonoBehaviour
                 GreedyIllusion();
                 break;
             case 3:
-                print("Casted Spell 3");
-                break;
-            case 4:
-                print("Casted Spell 4");
-                break;
-            case 5:
-                print("Casted Spell 5");
+                Frostbolt();
                 break;
             default:
                 print("Spell casting ERROR!");
@@ -134,6 +123,10 @@ public class SpellController : MonoBehaviour
 
     private void GreedyIllusion(){
         Instantiate(greedyIllusionPrefab, firePoint.position, firePoint.rotation);
+    }
+
+    private void Frostbolt(){
+        Instantiate(frostboltPrefab, firePoint.position, firePoint.rotation);
     }
 
 }

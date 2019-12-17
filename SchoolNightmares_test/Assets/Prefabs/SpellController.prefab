@@ -47,7 +47,7 @@ MonoBehaviour:
   - name: 
     description: 
     icon: {fileID: 0}
-    id: 5
+    id: 0
     cooldown: 0
     learned: 0
   - name: Fireball
@@ -63,25 +63,14 @@ MonoBehaviour:
     id: 2
     cooldown: 10
     learned: 0
-  - name: 
-    description: 
-    icon: {fileID: 0}
+  - name: Frostbolt
+    description: 'Cast a frostbolt that slows and turns enemies into ice-type. Cooldown:
+      7s.'
+    icon: {fileID: 21300000, guid: ebd99eec7c965aa4289eddd64dd969da, type: 3}
     id: 3
-    cooldown: 0
-    learned: 0
-  - name: 
-    description: 
-    icon: {fileID: 0}
-    id: 4
-    cooldown: 0
+    cooldown: 7
     learned: 0
   playerSpells:
-  - name: 
-    description: 
-    icon: {fileID: 0}
-    id: 0
-    cooldown: 0
-    learned: 0
   - name: 
     description: 
     icon: {fileID: 0}
@@ -109,4 +98,7 @@ MonoBehaviour:
   firePoint: {fileID: 0}
   fireballPrefab: {fileID: 3160240227358235117, guid: 6f9c9b1042ff4fb439663facd9cab95c,
     type: 3}
-  greedyIllusionPrefab: {fileID: 0}
+  greedyIllusionPrefab: {fileID: 8262721811241634548, guid: 93450422868fe894f98c211a0d384a49,
+    type: 3}
+  frostboltPrefab: {fileID: 2647319985849346593, guid: 1c318f437de228d4dade9ab144b74580,
+    type: 3}

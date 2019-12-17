@@ -25,6 +25,9 @@ public class FreeFriend : MonoBehaviour
             } else if (SceneManager.GetActiveScene().name == "Level2"){
                 // Set the portal control variable to true!
                 Level2PortalController.freedFriend = true;
+            } else if (SceneManager.GetActiveScene().name == "Level3"){
+                // Set the portal control variable to true!
+                Level3PortalController.freedFriend = true;
             }
             
         }

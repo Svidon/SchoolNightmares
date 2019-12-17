@@ -10,8 +10,7 @@ public class TeleportPlayerLevel1 : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            //p = GameObject.Find("Player");
-            //p.transform.position = new Vector2(-13f, 11f); // witch correct
+            // Move the player
             other.gameObject.transform.position = new Vector2(-24f, -3f);
         }
 

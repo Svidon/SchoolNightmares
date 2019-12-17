@@ -6,6 +6,7 @@ TagManager:
   tags:
   - IceElement
   - Bully
+  - GreenMonster
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Obstacles
   - Weed
   - Cauldron
-  - 
+  - LavaButton
   - 
   - 
   - 
