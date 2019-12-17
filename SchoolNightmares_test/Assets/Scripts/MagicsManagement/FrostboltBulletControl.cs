@@ -6,7 +6,6 @@ public class FrostboltBulletControl : MonoBehaviour
 {
     public float speed = 2f;
     private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
 
     private Vector2 direction;
 
@@ -16,7 +15,6 @@ public class FrostboltBulletControl : MonoBehaviour
 
         // Get rigidbody and sprite renderer components
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
 
         // Get direction thanks to the animations
         string anim = BoyAnimation.currentDirection;
@@ -55,7 +53,7 @@ public class FrostboltBulletControl : MonoBehaviour
                 direction = new Vector2(1f, 1f);
                 break;
             default:
-                print("Fireball DIRECTION ERROR!");
+                print("Frostbolt DIRECTION ERROR!");
                 break;
         }
 

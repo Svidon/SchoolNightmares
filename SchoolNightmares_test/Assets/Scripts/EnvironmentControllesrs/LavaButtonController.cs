@@ -46,6 +46,7 @@ public class LavaButtonController : MonoBehaviour
                 lavas[i].SetActive(false);
             }
             bridge.SetActive(true);
+            buttonTooltip.SetActive(false);
             bridgeDialogue.SetActive(true);
             used = true;
         }

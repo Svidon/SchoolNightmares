@@ -7,6 +7,8 @@ TagManager:
   - IceElement
   - Bully
   - GreenMonster
+  - Librarian
+  - BookBullet
   layers:
   - Default
   - TransparentFX

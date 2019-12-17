@@ -14,7 +14,7 @@ public class StartAudioScript : MonoBehaviour
         
     }
 
-    void PlayMusicClip(){
+    public void PlayMusicClip(){
         MusicSource.clip = MusicClip;
         MusicSource.volume = 1f;
         MusicSource.Play();
